@@ -80,3 +80,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  const heroCta = document.querySelector('.hero-cta');
+heroCta.addEventListener('click', e => {
+  e.preventDefault();
+  openSection('facilities');
+  setTimeout(() => {
+    document.getElementById('facilities')
+      .scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 350);
+});
+
+window.addEventListener('scroll', () => {
+    document.body.classList.toggle('shrink', window.scrollY > 50);
+  });
+
