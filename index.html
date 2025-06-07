@@ -10,7 +10,7 @@
   <header class="site-header">
     <nav class="site-nav">
       <div class="nav-logo">
-        <!-- logo1 파일명을 정확히 지정하세요 -->
+        <!-- logo1 파일명 -->
         <img src="images/logo.jpg" alt="메가스페이스 로고" />
       </div>
       <ul class="nav-menu">
@@ -25,12 +25,10 @@
     </nav>
   </header>
 
-  <!-- ┌───────────────────────────────────────────────────────────────────┐ -->
   <!-- │ 2) Hero 섹션: 오직 logo2만 중앙에 배치, 배경은 단색→그라데이션    │ -->
-  <!-- └───────────────────────────────────────────────────────────────────┘ -->
   <section class="hero-simple">
     <div class="hero-content">
-      <!-- logo2 파일명으로 교체하세요 -->
+      <!-- logo2-->
       <img src="images/logo2.jpg" alt="메가스페이스 로고" class="hero-logo" />
       <h1 class="hero-title">프리미엄 여성 전용 풀옵션 원룸</h1>
       <p class="hero-subtitle">
@@ -40,9 +38,7 @@
     </div>
   </section>
 
-  <!-- ────────────────────────────────────────────────────────── -->
   <!-- 2) 섹션 카드 그리드: 큰 타일 형태로 7개 메뉴 구성             -->
-  <!-- ────────────────────────────────────────────────────────── -->
   <section class="card-grid-container">
     <div class="card-grid">
       <!-- 소개 카드 -->
@@ -83,27 +79,16 @@
     </div>
   </section>
 
-  <!-- ────────────────────────────────────────────────────────── -->
   <!-- 3) 모든 섹션 콘텐츠: 초기엔 display:none, 클릭 시 슬라이드 다운 -->
-  <!-- ────────────────────────────────────────────────────────── -->
   <div class="sections-wrapper">
-
-    <!-- ─────────────────────────────────────────────────────────────────────────── -->
-    <!--  소개 섹션 (id="intro")                                                    -->
-    <!--  - 기존 텍스트 아래에 유튜브 영상을 반응형 iframe으로 삽입                -->
-    <!--  - .hidden 클래스는 자바스크립트로 토글됩니다 (처음에는 숨겨진 상태)         -->
-    <!-- ─────────────────────────────────────────────────────────────────────────── -->
     <section id="intro" class="container section hidden">
-      <!-- 소개 제목 -->
       <h2>소개</h2>
-      <!-- 소개 텍스트 -->
       <p>
         메가스페이스 회기점은 프리미엄 여성 전용 풀옵션 원룸으로, 2022년 7월
         신축된 안전하고 편리한 주거 공간을 제공합니다.  
         편의 시설, 교통, 보안 시스템 등 모든 분들이 만족할 수 있는 환경을
         갖추고 있습니다.
       </p>
-      <!-- 유튜브 소개영상 삽입 구간 -->
       <div class="intro-video-wrapper">
         <iframe
           src="https://www.youtube.com/embed/iLKecDgbcB4"
@@ -114,7 +99,6 @@
         ></iframe>
       </div>
 
-        <!-- 기존 콘텐츠… -->
         <div class="more-link" style="text-align:center; margin-top:24px;">
           <a
             href="https://blog.naver.com/megaspace_/223491402277"
@@ -136,7 +120,7 @@
         철저한 위생 관리를 운영하고 있습니다. 아래 이미지를 통해 각 시설의
         특징을 확인해보세요.
       </p>
-      <!-- 그리드 레이아웃: 각 아이템(이미지+캡션)을 배치 -->
+      <!-- 그리드 레이아웃: 각 아이템 배치 -->
       <div class="grid-four">
         <!-- 3.1 디지털 도어락 -->
         <div class="grid-item">
@@ -376,7 +360,7 @@
       </div>
     </section>
 
-  </div> <!-- .sections-wrapper 끝 -->
+  </div> 
 
   <script src="js/main.js"></script>
 </body>

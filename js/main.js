@@ -1,5 +1,3 @@
-// main.js
-
 // 모든 섹션 카드
 const cards = document.querySelectorAll('.section-card');
 // 네비게이션 링크
@@ -33,9 +31,9 @@ cards.forEach(card => {
 navLinks.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();                                   // 기본 앵커 이동 막기
-    const key = link.getAttribute('href').slice(1);       // "#facilities" → "facilities"
+    const key = link.getAttribute('href').slice(1);      
     openSection(key);
-    // 스크롤 애니메이션 (0.35초 뒤에)
+    // 스크롤 애니메이션 (0.35초)
     setTimeout(() => {
       const id = resolveId(key);
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -51,8 +49,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
-// main.js
 
 // (1) DOM 로드 후 실행
 document.addEventListener("DOMContentLoaded", () => {
