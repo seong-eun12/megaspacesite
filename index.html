@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>메가스페이스 회기점</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <div class="nav-logo">
+        <!-- logo1 파일명을 정확히 지정하세요 -->
+        <img src="images/logo.jpg" alt="메가스페이스 로고" />
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#intro">소개</a></li>
+        <li><a href="#facilities">시설안내</a></li>
+        <li><a href="#personal">개인시설</a></li>
+        <li><a href="#common">공용시설</a></li>
+        <li><a href="#location">오시는길</a></li>
+        <li><a href="#nearby">주변시설</a></li>
+        <li><a href="#inquiry">입실문의</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ┌───────────────────────────────────────────────────────────────────┐ -->
+  <!-- │ 2) Hero 섹션: 오직 logo2만 중앙에 배치, 배경은 단색→그라데이션    │ -->
+  <!-- └───────────────────────────────────────────────────────────────────┘ -->
+  <section class="hero-simple">
+    <div class="hero-content">
+      <!-- logo2 파일명으로 교체하세요 -->
+      <img src="images/logo2.jpg" alt="메가스페이스 로고" class="hero-logo" />
+      <h1 class="hero-title">프리미엄 여성 전용 풀옵션 원룸</h1>
+      <p class="hero-subtitle">
+        안전하고 편리한 주거 공간, 메가스페이스 회기점에서 시작하세요.
+      </p>
+      <a href="#facilities" class="hero-cta">시설 안내 보기</a>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────── -->
+  <!-- 2) 섹션 카드 그리드: 큰 타일 형태로 7개 메뉴 구성             -->
+  <!-- ────────────────────────────────────────────────────────── -->
+  <section class="card-grid-container">
+    <div class="card-grid">
+      <!-- 소개 카드 -->
+      <div class="section-card" data-target="intro">
+        <h3>소개</h3>
+        <p>메가스페이스 회기점의 브랜드와 철학을 한눈에</p>
+      </div>
+      <!-- 시설 안내 카드 -->
+      <div class="section-card" data-target="facilities">
+        <h3>시설 안내</h3>
+        <p>입주민의 안전과 편의를 최우선으로 고려</p>
+      </div>
+      <!-- 개인시설 카드 -->
+      <div class="section-card" data-target="personal">
+        <h3>개인시설</h3>
+        <p>풀옵션 개인실 사진 및 동영상으로 확인</p>
+      </div>
+      <!-- 공용시설 카드 -->
+      <div class="section-card" data-target="common">
+        <h3>공용시설</h3>
+        <p>주방·인덕션·전자레인지·정수기 등</p>
+      </div>
+      <!-- 오는길 카드 -->
+      <div class="section-card" data-target="location">
+        <h3>오는길</h3>
+        <p>지하철·버스 정보와 지도 안내</p>
+      </div>
+      <!-- 주변시설 카드 -->
+      <div class="section-card" data-target="nearby">
+        <h3>주변시설</h3>
+        <p>편의점·카페·맛집 등 주변 관광 정보</p>
+      </div>
+      <!-- 입실문의 카드 -->
+      <div class="section-card" data-target="inquiry">
+        <h3>입실문의</h3>
+        <p>문의 전화번호·이메일·폼 정보를 확인</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────────────────────────────────────── -->
+  <!-- 3) 모든 섹션 콘텐츠: 초기엔 display:none, 클릭 시 슬라이드 다운 -->
+  <!-- ────────────────────────────────────────────────────────── -->
+  <div class="sections-wrapper">
+
+    <!-- ─────────────────────────────────────────────────────────────────────────── -->
+    <!--  소개 섹션 (id="intro")                                                    -->
+    <!--  - 기존 텍스트 아래에 유튜브 영상을 반응형 iframe으로 삽입                -->
+    <!--  - .hidden 클래스는 자바스크립트로 토글됩니다 (처음에는 숨겨진 상태)         -->
+    <!-- ─────────────────────────────────────────────────────────────────────────── -->
+    <section id="intro" class="container section hidden">
+      <!-- 소개 제목 -->
+      <h2>소개</h2>
+      <!-- 소개 텍스트 -->
+      <p>
+        메가스페이스 회기점은 프리미엄 여성 전용 풀옵션 원룸으로, 2022년 7월
+        신축된 안전하고 편리한 주거 공간을 제공합니다.  
+        편의 시설, 교통, 보안 시스템 등 모든 분들이 만족할 수 있는 환경을
+        갖추고 있습니다.
+      </p>
+      <!-- 유튜브 소개영상 삽입 구간 -->
+      <div class="intro-video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/iLKecDgbcB4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          title="메가스페이스 회기점 소개영상"
+        ></iframe>
+      </div>
+
+        <!-- 기존 콘텐츠… -->
+        <div class="more-link" style="text-align:center; margin-top:24px;">
+          <a
+            href="https://blog.naver.com/megaspace_/223491402277"
+            target="_blank"
+            rel="noopener"
+            class="btn-blog"
+          >
+            📝 블로그에서 자세히 보기
+          </a>
+        </div>
+      </section>
+      
+
+    <!-- 3.2 시설안내 섹션 -->
+    <section id="facilities" class="container section hidden">
+      <h2>시설안내</h2>
+      <p>
+        메가스페이스 회기점은 안전한 주거 환경을 위해 최신식 보안 시스템과
+        철저한 위생 관리를 운영하고 있습니다. 아래 이미지를 통해 각 시설의
+        특징을 확인해보세요.
+      </p>
+      <!-- 그리드 레이아웃: 각 아이템(이미지+캡션)을 배치 -->
+      <div class="grid-four">
+        <!-- 3.1 디지털 도어락 -->
+        <div class="grid-item">
+          <img src="images/secret3.jpg" alt="디지털 도어락 설치 모습" />
+          <p class="caption">🔒 최신식 디지털 도어락 설치로 안전한 출입 관리</p>
+        </div>
+        <!-- 3.2 3중 보안 시스템 -->
+        <div class="grid-item">
+          <img src="images/secret1.jpg" alt="3중 보안 시스템(비밀번호 인증)" />
+          <p class="caption">🛡️ 비밀번호 인증 3중 보안</p>
+        </div>
+        <!-- 3.3 매달 방역 실시 -->
+        <div class="grid-item">
+          <img src="images/secret4.jpg" alt="매달 전문업체 방역 작업" />
+          <p class="caption">✨ 매달 전실 전문업체에서 실시하는 철저한 방역</p>
+        </div>
+        <!-- 3.4 복도 및 주변 CCTV -->
+        <div class="grid-item">
+          <img src="images/secret2.jpg" alt="복도 및 주변에 설치된 고화질 CCTV 모습" />
+          <p class="caption">📹 24시간 녹화되는 복도·주변 CCTV 설치</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.3 개인시설 섹션 -->
+    <section id="personal" class="container section hidden">
+      <h2>개인시설</h2>
+      <!-- 사진 그리드 -->
+      <div class="grid-three">
+        <div class="grid-item">
+          <img src="images/room1.jpeg" alt="개인실 1: 침대, 책상, 세탁기 풀옵션 제공" />
+          <p>STANDARD ROOM</p>
+          <p>550,000원</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/room2.jpeg" alt="개인실 2: 주방, 냉장고 풀옵션 제공" />
+          <p>DELUXE ROOM</p>
+          <p>650,000원</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/room3.jpeg" alt="개인실 3: 욕실, 샤워실 풀옵션 제공" />
+          <p>SUITE ROOM</p>
+          <p>700,000원</p>
+        </div>
+      </div>
+      <p class="caption">전실 풀옵션 제공으로 편안한 거주 환경을 보장합니다.</p>
+      <!-- 동영상 그리드 -->
+      <h3>개인시설 소개영상</h3>
+      <div class="grid-three video-grid">
+        <div class="grid-item">
+          <div class="video-wrapper">
+            <video controls>
+              <source src="videos/place1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="video-caption">침대·책상·세탁기 풀옵션</p>
+        </div>
+        <div class="grid-item">
+          <div class="video-wrapper">
+            <video controls>
+              <source src="videos/place2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="video-caption">주방·냉장고 풀옵션</p>
+        </div>
+        <div class="grid-item">
+          <div class="video-wrapper">
+            <video controls>
+              <source src="videos/place3.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="video-caption">욕실·샤워실 풀옵션</p>
+        </div>
+      </div>
+      <p class="caption">각 개인시설을 동영상으로 확인해 보세요.</p>
+    </section>
+
+    <!-- 3.4 공용시설 섹션 -->
+    <section id="common" class="container section hidden">
+      <h2>공용시설</h2>
+      <div class="grid-three">
+        <div class="grid-item">
+          <img src="images/common1.jpeg" alt="공용 주방 전경: 넓은 조리대와 싱크대, 수납장" />
+          <p>공용 주방: 넓은 조리대와 충분한 수납 공간</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/common2.jpeg" alt="공용 인덕션: 2구 인덕션과 환풍기 완비" />
+          <p>공용 인덕션: 2구 인덕션과 환풍기 완비</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/common5.jpeg" alt="공용 전자레인지: 입주민 누구나 사용 가능" />
+          <p>공용 전자레인지: 입주민 누구나 사용 가능한 전자레인지</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/common3.jpeg" alt="공용 정수기: 냉·온수 제공, 필터 정기 교체" />
+          <p>공용 정수기: 냉·온수 모두 제공, 필터 정기 교체</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/common4.jpeg" alt="복도 전경: 넓고 깔끔한 복도 모습" />
+          <p>복도 전경: 청결하게 관리되는 넓은 복도</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/common6.jpeg" alt="복도 개인 신발장: 각 방 앞에 배정된 개인 신발장" />
+          <p>복도 개인 신발장: 각 방 앞에 배정된 개인 신발장 제공</p>
+        </div>
+      </div>
+      <p class="caption">청결하게 관리되는 공용 공간으로 입주민 편의를 제공합니다.</p>
+    </section>
+
+    <!-- 3.5 오시는길 섹션 -->
+    <section id="location" class="container section hidden">
+      <h2>오시는길</h2>
+      <!-- 네이버 지도 Embed -->
+      <div class="map-wrapper">
+        <iframe
+          src="https://map.naver.com/v5/entry/place/1713464640?c=15,0,0,0,dh"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen
+          title="메가스페이스 회기점 위치"
+        ></iframe>
+      </div>
+      <!-- 주소 및 길찾기/지도 보기 버튼 -->
+      <div class="address-and-buttons">
+        <div class="address-text">
+          <h3>메가스페이스 회기점<br>
+          서울특별시 동대문구 회기로 117, 2·3층 (회기동)</h3>
+        </div>
+        <div class="map-buttons">
+          <!-- 길찾기 버튼 -->
+          <a
+            href="https://map.naver.com/v5/directions/-/14122293?c=15,0,0,0,dh&placeId=1713464640"
+            target="_blank"
+            rel="noopener"
+            class="btn-map-route"
+          >
+            🚗 길찾기
+          </a>
+          <!-- 지도에서 보기 버튼 -->
+          <a
+            href="https://map.naver.com/v5/entry/place/1713464640"
+            target="_blank"
+            rel="noopener"
+            class="btn-map-view"
+          >
+            📍 지도에서 보기
+          </a>
+        </div>
+      </div>
+      <!-- 정보 리스트 -->
+      <ul class="info-list">
+        <li>
+          <span class="info-icon">⏰</span>
+          <span class="info-label">이용시간:</span>
+          <span class="info-value">매일 00:00 ~ 24:00</span>
+        </li>
+        <li>
+          <span class="info-icon">📞</span>
+          <span class="info-label">전화번호:</span>
+          <span class="info-value">070-8065-8831</span>
+        </li>
+        <li>
+          <span class="info-icon">📶</span>
+          <span class="info-label">와이파이</span>
+        </li>
+        <li>
+          <span class="info-icon">🏠</span>
+          <span class="info-label">공용시설</span>
+        </li>
+        <li>
+          <span class="info-icon">🛏️</span>
+          <span class="info-label">침대방</span>
+        </li>
+      </ul>
+      <!-- 사업자 정보 -->
+      <div class="business-info">
+        <ul>
+          <li>
+            <span class="biz-icon">👤</span>
+            <span class="biz-label">상호명:</span>
+            <span class="biz-value">메가스페이스 회기점</span>
+          </li>
+          <li>
+            <span class="biz-icon">🏢</span>
+            <span class="biz-label">대표자:</span>
+            <span class="biz-value">남명이</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3.6 주변시설 섹션 -->
+    <section id="nearby" class="container section hidden">
+        <h2>주변시설</h2>
+        <p>메가스페이스 회기점 주변에는 대학, 연구소, 병원부터 편의점·마트·맛집까지 다양한 시설이 밀집해 있습니다.</p>
+        <ul class="nearby-list">
+          <li>📚 경희대학교</li>
+          <li>📗 한국외국어대학교</li>
+          <li>🏫 고려대학교</li>
+          <li>🔬 KAIST 서울캠퍼스</li>
+          <li>🏥 경희대병원</li>
+          <li>🔬 KIST (한국과학기술연구원)</li>
+          <li>🧫 한국바이오생명공학연구원</li>
+          <li>🍽️ 회기역 맛집 거리</li>
+          <li>🛒 편의점 • 대형마트</li>
+        </ul>
+      </section>
+
+    <!-- 3.7 입실문의 섹션 -->
+    <section id="inquiry" class="container section hidden">
+      <h2>입실문의</h2>
+      <!-- 카드 레이아웃 -->
+      <div class="inquiry-card">
+        <ul class="inquiry-list">
+          <!-- 카톡 문의 -->
+          <li class="inquiry-item">
+            <a
+              href="https://pf.kakao.com/_uFnhG"
+              target="_blank"
+              rel="noopener"
+              class="inquiry-button"
+            >
+              <span class="icon">💬</span>
+              <span class="label">카톡으로 문의하기</span>
+            </a>
+          </li>
+          <!-- 전화 문의 -->
+          <li class="inquiry-item">
+            <a href="tel:07080658831" class="inquiry-button">
+              <span class="icon">📞</span>
+              <span class="label">070-8065-8831 전화하기</span>
+            </a>
+          </li>
+          <!-- 네이버 톡톡 문의 -->
+          <li class="inquiry-item">
+            <a
+              href="https://map.naver.com/p/entry/place/1713464640?placePath=/home?entry=plt&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202506061356&locale=ko&svcName=map_pcv5&searchType=place&lng=127.0495869&lat=37.5916175&c=15.00,0,0,0,dh"
+              target="_blank"
+              rel="noopener"
+              class="inquiry-button"
+            >
+              <span class="icon">🗺️</span>
+              <span class="label">네이버 톡톡으로 문의하기</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div> <!-- .sections-wrapper 끝 -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
