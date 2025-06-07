@@ -50,3 +50,37 @@ window.addEventListener('DOMContentLoaded', () => {
     openSection(hash);
   }
 });
+
+
+// main.js
+
+// (1) DOM 로드 후 실행
+document.addEventListener("DOMContentLoaded", () => {
+    const cards    = document.querySelectorAll(".section-card");
+    const sections = document.querySelectorAll(".container.section");
+  
+    // helper: id 그대로 가져오기
+    const openSection = key => {
+      sections.forEach(sec => {
+        sec.classList.toggle("hidden", sec.id !== key);
+      });
+    };
+  
+    // (2) 카드 클릭 → 해당 섹션 열고 → 스크롤
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const targetId = card.dataset.target;      // e.g. "facilities"
+        const section  = document.getElementById(targetId);
+        if (!section) return;
+  
+        // 1) 섹션 열기
+        openSection(targetId);
+  
+        // 2) 조금 딜레이 준 뒤 스크롤 (section이 보이도록)
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 150);
+      });
+    });
+  });
+  
