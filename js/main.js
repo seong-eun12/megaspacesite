@@ -94,3 +94,14 @@ window.addEventListener('scroll', () => {
     document.body.classList.toggle('shrink', window.scrollY > 50);
   });
 
+  //로고 초기화
+const logo = document.querySelector('.nav-logo img');
+if (logo) {
+  logo.style.cursor = 'pointer';
+  logo.addEventListener('click', () => {
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.classList.add('hidden');
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
