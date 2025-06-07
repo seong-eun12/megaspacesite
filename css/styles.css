@@ -68,6 +68,8 @@
   }
   .nav-menu {
     display: flex;
+    align-items: center;   
+    height: 100%;   
     gap: 24px;
     margin-left: auto;
     padding-right: 24px;      
